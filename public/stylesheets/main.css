@@ -1,0 +1,105 @@
+
+.sidebar {
+    background-color: #111;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.centered {
+    margin: auto;
+    justify-content: center;
+    display: flex;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    width: 90%;
+}
+
+.search-wrapper {
+    display: flex;
+    border: 2px solid crimson;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 50%;
+    margin: auto;
+}
+
+#search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: grey;
+}
+
+#search-button {
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#search-input::placeholder {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    opacity: 1;
+}
+
+#search-input:focus {
+    background-color: #bfbfbf;
+}
+
+#search-button:hover {
+    background-color: #a9a9a9;
+}

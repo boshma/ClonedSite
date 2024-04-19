@@ -1,0 +1,57 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.footer-banner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns the source text directly above the logos */
+}
+
+.source-text {
+  margin-bottom: 20px; /* Adjust as needed */
+  font-weight: bold;
+  margin-left: -22px;
+}
+
+.logos {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.left-footer-logo, .footer-logo, .right-footer-logo {
+  height: 50px; /* Specify a fixed height for consistency */
+  margin-right: 10px; /* Right margin for logos */
+}
+
+.right-footer-logo {
+  height: 80px; /* Increase the height as needed */
+  width: auto; /* Maintain aspect ratio */
+  margin-right: 0; /* No extra margin on the right */
+  max-width: none; /* Override any previous max-width if necessary */
+}
+
+.wsu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Aligns WSU logo and text to the right */
+  text-align: right; /* Ensures text aligns right within its container */
+  margin-top: -12px;
+}
+
+.wsu-text {
+  white-space: nowrap; /* Keeps the WSU text on a single line */
+  margin-top: 5px; /* Space between the WSU logo and the text */
+  margin-right: 120px; 
+}

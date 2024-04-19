@@ -1,0 +1,149 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+p {
+    line-height: 1.5;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.centered {
+    margin: auto;
+    justify-content: center;
+    display: flex;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.interactive_picture {
+    position: relative;
+    display: inline-block;
+    padding: 0%;
+}
+
+.scrollable-column {
+    overflow-y: auto; 
+    max-height: calc(100vh - 100px);
+}
+
+.shape {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #333;
+    transition: background-color 0.3s ease;
+}
+
+.shape:hover {
+    background-color: red;
+}
+
+.polygon-container {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+}
+
+.polygon:hover {
+    background-color: red;
+}
+
+.polygon {
+    transition: background-color 0.3s ease;
+    border: 2px solid #333;
+
+}
+
+.ht1000 {
+    height: 1000px;
+}
+
+.red {
+    background-color: red;
+}
+
+.zone_1_2 {
+    width: 100%;
+    height: 100%;
+    background-color: lightgreen;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    clip-path: polygon(38% 39%, 44% 35%, 44% 39.2%, 51.6% 44%, 56.4% 41.2%, 62.5% 45%, 62.5% 49%, 68.6% 53%, 77.8% 47.2%, 77.8% 43.4%, 83.6% 47.4%, 67.3% 59%);
+}
+
+.zone_1_1 {
+    width: 100%;
+    height: 100%;
+    background-color: lightgreen;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    clip-path: polygon(7.1% 47.1%, 14.5% 42.6%, 16.5% 45.3%, 13.2% 47.2%, 21% 52.4%, 33.3% 44%, 33.3% 40%, 39.2% 44.2%, 20.7% 56.2%);
+}
+
+.zone_2 {
+    width: 100%;
+    height: 100%;
+    background-color: lightgreen;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    clip-path: polygon(0% 62.45%, 23.86% 78.9%, 45.64% 64.59%, 67.24% 79.1%, 100% 56.69%, 100% 37.5%, 54.72% 7.27%, 34.91% 20.6%, 25.51% 14.55%, 0% 31.4%);
+}
+
+.zone_3 {
+    width: 100%;
+    height: 100%;
+    background-color: lightgreen;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
